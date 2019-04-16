@@ -1,0 +1,215 @@
+/* Tabs/IPads Landscape
+==========================================================================================*/
+@media (min-width:1280px) and (max-width:1920px){
+}
+
+/* Custom Menus BreakPoint
+==========================================================================================*/
+@media (min-width:801px) and (max-width:1000px){
+    body #menu-main li:last-child a {
+        padding: 5px 15px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    body #menu-main li a {
+        font-size: 13px;
+        padding: 8px;
+    }
+    body #logo img {
+        max-width: 150px;
+    }
+
+}
+
+/* Tabs/Ipads
+==========================================================================================*/
+@media (min-width:768px) and (max-width:1024px){
+    body .addressBox h3 {
+        font-size: 11px;
+    }
+    body .addressBox p {
+        font-size: 10px;
+        margin-top: -5px;
+    }
+    body .addressBox.info .fa {
+        margin-left: -15px;
+        margin-right: 0px;
+    }
+    body .addressBox.info {
+        padding-left: 15px;
+        width: 17%;
+    }
+    .rev_slider a {
+        padding: 8px 20px !important;
+        font-size: 13px !important;
+        margin-top: 12px !important;
+    }
+    .line1 {
+        font-size: 19px !important;
+    }
+    .line2 {
+        font-size: 25px !important;
+    }
+    .line3 {
+        font-size: 15px !important;
+        margin: 10px 0 !important;
+        display: inline-block;
+    }
+    .attributes-listing h3 {
+        font-size: 13px;
+    }
+    body .home-warranty-attributes {
+        padding: 30px 0;
+    }
+    body .home-warranty-attributes .attr-col-wrapper {
+        margin-top: 0;
+    }
+    body .home-warranty-attributes .attributes-listing {
+        margin-bottom: 30px !important;
+    }
+    body .call-to-action p {
+        font-size: 14px;
+    }
+    body.single.single-post #main, 
+    body.blog #main {
+        padding: 30px 0 !important;
+    }
+    body .addressBox.form #s {
+        margin: 0;
+    }
+}
+
+/* New Mobile Devices
+==========================================================================================*/
+@media (max-width:767px){
+    #topbar {
+        display: none;
+    }
+    body #logo img {
+        max-width: 125px;
+    }
+    .addressBox.info {
+        width: 15%;
+    }
+    .rev_slider a {
+        padding: 5px 15px !important;
+        font-size: 11px !important;
+        margin-top: 10px !important;
+    }
+    .line1 {
+        font-size: 17px !important;
+    }
+    .line2 {
+        font-size: 22px !important;
+    }
+    .line3 {
+        font-size: 13px !important;
+        margin: 8px 0 !important;
+        display: inline-block;
+    }
+    body .home-warranty-attributes {
+        padding: 30px 0;
+    }
+    body .site-main-heading h1 {
+        font-size: 23px;
+        padding: 0 30px !important;
+    }
+    body .site-sub-heading h3 {
+        font-size: 18px !important;
+        padding: 0 18px !important;
+    }
+    body .home-warranty-attributes .attr-col-wrapper {
+        margin-top: 0px;
+    }
+    body .home-warranty-attributes .attributes-listing {
+        margin-bottom: 5px !important;
+    }
+    .home-warranty-attributes .image-wrapepr {
+        display: none;
+    }
+    .attributes-listing .elementor-image-box-img {
+        margin: 0 !important;
+    }
+    body  .home-testimonial-wrapper {
+        padding: 31px 0;
+    }
+    body .home-testimonial-wrapper h1 {
+        margin-bottom: 0px !important;
+    }
+    body #footermenu li {
+        display: inline-block;
+        margin: 0 18px 0;
+    }
+    body #footermenu {
+        padding: 15px 0;
+    }
+    body #subfooter .widget-title {
+        font-size: 30px;
+    }
+    body #subfooter .textwidget p {
+        font-size: 20px;
+    }
+    body #subfooter {
+        padding: 15px 0 5px 0;
+    }
+    body .home-testimonial-wrapper .elementor-testimonial__text {
+        font-size: 14px !important;
+    }
+    body .home-recent-posts {
+        padding: 30px 0 !important;
+    }
+    body .home-recent-posts .site-sub-heading {
+        margin-bottom: 15px !important;
+    }
+    body .home-recent-posts .elementor-post.elementor-grid-item {
+        border: solid 1px #fff0;
+    }
+    .call-to-action p {
+        font-size: 14px;
+    }
+    .call-to-action .elementor-button-wrapper {
+        text-align: center;
+    }
+    body.single.single-post #main, 
+    body.blog #main {
+        padding: 0 !important;
+    }
+}
+
+/* Small Mobile Devices
+==========================================================================================*/
+@media (max-width:480px){
+    .rev_slider a {
+        padding: 5px 15px !important;
+        font-size: 11px !important;
+        margin-top: 15px !important;
+    }
+    .line1 {
+        font-size: 15px !important;
+    }
+    .line2 {
+        font-size: 20px !important;
+    }
+    .line3 {
+        font-size: 11px !important;
+        margin: 6px 0 !important;
+        display: inline-block;
+    }
+    body.blog article {
+        display: block;
+    }
+    body.blog .post-image.blog-post-image {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+    }
+    body.blog .post-body.blog-post-content {
+        float: left;
+        width: 87%;
+        border: none;
+    }
+    body.blog .post-image.blog-post-image img {
+        width: 87%;
+    }
+
+}

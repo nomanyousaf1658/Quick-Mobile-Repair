@@ -1,0 +1,352 @@
+/*
+Theme Name: Quick Mobile Repair
+Template: allegiant
+Author: Manan
+Description: This is custom theme for development and created bt "abdulmanan1658@gmail.com"
+Version: 1.0
+Created: 10-04-2019
+*/
+
+
+/*ee3823*/
+
+@import '../allegiant/style.css';
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+::selection{color:#fff; background-color:#0078d7}
+::-moz-selection{color:#fff;background-color:#0078d7}
+
+body{font-family: 'Rubik', sans-serif;}
+a:active, a:focus { outline: none; }
+/*
+*
+* Header Style
+*
+*/
+#logo img { max-width: 200px; }
+#menu-main li a { color: #000; font-size: 16px; text-transform: uppercase; }
+#menu-main { padding: 18px 0; }
+#menu-main .current_page_item a { color: #ee3823;}
+#menu-main li:last-child a { background: #ee3823;color: #fff; border-radius: 30px; padding: 8px 30px; margin-left: 20px; text-transform: none; }
+.addressBox.info {
+    padding-left: 35px;
+    width: 17%;
+    float: left;
+}
+.addressBox.info .fa {
+    margin-left: -35px;
+    float: left;
+    width: 22px;
+    text-align: left;
+    margin-right: 13px;
+    color: #fff;
+    margin-top: -4px;
+}
+.addressBox h3 {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #929292;
+}
+.addressBox p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -3px;
+}
+#topbar {
+    background: #333333;
+    padding: 7px 0;
+}
+.addressBox.form {
+    float: left;
+    position: relative;
+    width: 20%;
+}
+.addressBox.form .btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    background: no-repeat;
+    color: #fff;
+    line-height: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.addressBox.form #s {
+    background: #606060;
+    border: none;
+    border-radius: 36px;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin: 5px 0 0 0;
+}
+#searchsubmit .fa {
+    font-size: 14px;
+}
+/*
+*
+* Footer Style
+*
+*/
+#footermenu li:last-child {
+    display: none;
+}
+#footer {
+    background: #333333;
+    padding: 0;
+}
+.footer-content {
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+#footermenu #menu-main-navigation {
+    margin: 0;
+}
+#footermenu {
+    border-bottom: solid 1px #717171;
+    padding: 30px 0;
+}
+#subfooter {
+    background: #e2e2e2;
+    color: #333333;
+    text-align: center;
+    padding: 40px 0 30px 0;
+}
+.footer::before {
+    background: transparent;
+}
+#subfooter .widget-title {
+    color: #333333;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+#subfooter .col3 {
+    width: 100%;
+}
+#subfooter .textwidget p {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+#subfooter .col3 .widget.widget_text {
+    margin-bottom: 0;
+}
+
+/*
+*
+* Home Page
+*
+*/
+.home #main {
+    padding: 0;
+}
+.home .elementor-column-wrap{
+    padding: 0 !important;
+}
+.site-btn.bg-white {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #ee3823 !important;
+}
+.site-main-heading h1, .site-sub-heading h3 {
+    color: #333333 !important;
+}
+.site-main-heading {
+    margin-bottom: 15px !important;
+}
+.home-warranty-attributes {
+    padding: 60px 0;
+}
+.site-main-heading h1{
+    font-weight: bold !important;;
+}
+.home-warranty-attributes .elementor-image-box-wrapper {
+    font-size: 13px;
+}
+.home-warranty-attributes .elementor-image-box-wrapper .elementor-image-box-title {
+    margin: 10px 0;
+}
+.home-warranty-attributes .data-recovery h3 {
+    padding-right: 20px;
+}
+.home-warranty-attributes .attributes-listing {
+    margin-bottom: 60px !important;
+}
+.home-warranty-attributes .attr-col-wrapper {
+    margin-top: 80px;
+}
+
+.call-to-action .site-btn a {
+    background: #fff !important;
+    border-radius: 23px !important;
+    color: #ee3823 !important;
+    margin: 5px 0;
+}
+.call-to-action p{
+    margin: 0;
+}
+.call-to-action {
+    padding: 30px 0;
+}
+.home-testimonial-wrapper{
+    padding: 60px 0 60px 0;
+}
+.home-testimonial-wrapper h1 {
+    color: #fff !important;
+    margin-bottom: 40px !important
+}
+.elementor-testimonial--layout-image_above .elementor-testimonial__footer {
+    margin-bottom: 10px !important;
+}
+.elementor-testimonial__text{
+    color: #fff !important;
+}
+.elementor-testimonial__name, .elementor-testimonial__title {
+    color: #888888 !important;
+}
+body.home .elementor-post.elementor-grid-item .elementor-post__card h5 {
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 51px;
+    margin: 0;
+}
+.home-recent-posts {
+    padding: 60px 0 !important;
+}
+.home-recent-posts .site-sub-heading {
+    margin-bottom: 60px !important;
+}
+.home .elementor-post__avatar {
+    display: none;
+}
+.home .elementor-post__card .elementor-post__thumbnail__link {
+    margin: 0 !important;
+}
+.home .elementor-post__card .elementor-post__read-more {
+    background: #ee3823;
+    color: #fff !important;
+    padding: 7px 15px;
+    text-transform: none !important;
+    font-weight: normal !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+.about-locations-listing .elementor-image-box-wrapper {
+    position: relative;
+}
+.about-locations-listing .elementor-image-box-content {
+    background: #333333;
+}
+.about-locations-listing .elementor-image-box-title {
+    margin: -6px 0 0 0;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.faq-page-wrapper .elementor-tab-title.elementor-active {
+    background: #ee3823;
+    color: #fff !important;
+}
+.footer-cta {
+    margin-bottom: -20px;
+}
+.blog article {
+    float: left;
+    width: 100%;
+    display: inline-flex;
+    border: solid 1px #e2e2e2;
+    margin-bottom: 30px;
+}
+.blog .post-image.blog-post-image {
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+.blog .post-body.blog-post-content {
+    float: left;
+    width: 60%;
+    border: none;
+}
+.blog .post-author, .blog .post-category {
+    display: none;
+}
+.blog .post .post-byline::before {
+    height: 0px;
+}
+.blog .post-byline {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.blog .post-comments {
+    display: none;
+}
+.blog .post-image.blog-post-image img {
+    padding: 20px;
+}
+html body .button, html body .button:link, html body .button:visited, input[type="submit"] {
+    border: 2px solid #ee3823;
+    color: #ee3823;
+    padding: 6px 15px;
+}
+html body .button:hover, input[type="submit"]:hover {
+    color: #fff;
+    background: #ee3823;
+}
+.single-post .post-image.blog-post-image {
+    display: none;
+}
+.single.single-post #main,
+.blog #main{
+    padding: 80px 0 0 0;
+}
+.post-author {
+    display: none;
+}
+.pagination {
+    float: left;
+    width: 100%;
+}
+.pagination span, .pagination a {
+    border-radius: 0px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+}
+.pagination .current {
+    color: #fff;
+    background: #ee3823;
+}
+#subfooter .fb a::after {
+    content: '\f082';
+    font-family: FontAwesome;
+    color: #EE3823;
+    font-size: 25px;
+    
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    z-index: 999;
+}
+#subfooter .insta a::after {
+    content: '\f16d';
+    font-family: FontAwesome;
+    color: #EE3823;
+    font-size: 25px;
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    z-index: 999;
+}
+#subfooter li {
+    display: inline-block;
+    position: relative;
+}
+#subfooter .fb a,
+#subfooter .insta a{
+    color: #e2e2e2 !important;
+}
