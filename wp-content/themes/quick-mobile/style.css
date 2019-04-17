@@ -324,9 +324,8 @@ html body .button:hover, input[type="submit"]:hover {
 #subfooter .fb a::after {
     content: '\f082';
     font-family: FontAwesome;
-    color: #EE3823;
+    color: #333;
     font-size: 25px;
-    
     position: absolute;
     left: 0px;
     top: -5px;
@@ -335,7 +334,7 @@ html body .button:hover, input[type="submit"]:hover {
 #subfooter .insta a::after {
     content: '\f16d';
     font-family: FontAwesome;
-    color: #EE3823;
+    color: #333;
     font-size: 25px;
     position: absolute;
     left: 15px;
@@ -349,4 +348,11 @@ html body .button:hover, input[type="submit"]:hover {
 #subfooter .fb a,
 #subfooter .insta a{
     color: #e2e2e2 !important;
+}
+.faq-page-wrapper .elementor-tab-title {
+    border: solid 1px #e2e2e2;
+    margin: 10px 0 !important;
+}
+.faq-page-wrapper .elementor-tab-title.elementor-active {
+    margin: 0 !important;
 }
