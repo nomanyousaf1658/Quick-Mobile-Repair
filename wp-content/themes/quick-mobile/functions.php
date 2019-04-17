@@ -62,7 +62,7 @@ function registerCustomPostTypeLocation() {
         'can_export' => true,
         'rewrite' => true,
         'capability_type' => 'post',
-        'supports' => array('title', 'thumbnail'),
+        'supports' => array('title','editor', 'thumbnail'),
     );
 
     register_post_type('locatioan', $args);
