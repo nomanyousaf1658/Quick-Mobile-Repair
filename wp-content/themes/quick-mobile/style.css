@@ -30,7 +30,7 @@ a:active, a:focus { outline: none; }
 #menu-main li:last-child a { background: #ee3823;color: #fff; border-radius: 30px; padding: 8px 30px; margin-left: 20px; text-transform: none; }
 .addressBox.info {
     padding-left: 35px;
-    width: 17%;
+    width: 13%;
     float: left;
 }
 .addressBox.info .fa {
@@ -43,7 +43,7 @@ a:active, a:focus { outline: none; }
     margin-top: -4px;
 }
 .addressBox h3 {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1;
     margin-bottom: 0;
     color: #929292;
@@ -51,7 +51,7 @@ a:active, a:focus { outline: none; }
 .addressBox p {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
     margin-top: -3px;
 }
@@ -355,4 +355,50 @@ html body .button:hover, input[type="submit"]:hover {
 }
 .faq-page-wrapper .elementor-tab-title.elementor-active {
     margin: 0 !important;
+}
+.home-recent-posts .elementor-post__excerpt {     max-height: 85px;     overflow: hidden; }
+.location-page-listing h2 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+body .location-info-icon {
+    color: #fff;
+    margin: 3px !important;
+    font-size: 17px;
+    font-weight: 200;
+}
+.location-info-icon .fa {
+    color: #ee3823;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.location-info-icon p {
+    margin: 5px 0px;
+}
+.location-page-listing .location-link a {
+    background: #ee3823;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 30px 0 0 0;
+}
+.location-listing{
+    padding: 100px 0;
+    text-align: center;
+}
+.above-footer-cta .call-to-action {
+    margin-bottom: -20px;
+}
+.above-footer-cta {
+    margin-top: -10px;
+}
+#topbar .addressBox a{
+    color:#fff;
+    text-decoration: none;
+}
+#topbar .addressBox a:hover{
+    color:#ee3823;
 }

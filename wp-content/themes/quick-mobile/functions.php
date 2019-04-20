@@ -26,48 +26,6 @@ if (!function_exists('cpotheme_footer')) {
 
 }
 
-
-//Custom post type testmonials
-add_action('init', 'registerCustomPostTypeLocation');
-
-function registerCustomPostTypeLocation() {
-
-    $labels = array(
-        'name' => __('locatioans', 'text_domain'),
-        'singular_name' => __('locatioan', 'text_domain'),
-        'add_new' => _x('Add New', '${4:Name}', 'text_domain'),
-        'add_new_item' => __('Add New', 'text_domain}'),
-        'edit_item' => __('Edit', 'text_domain'),
-        'new_item' => __('New', 'text_domain'),
-        'view_item' => __('View', 'text_domain'),
-        'search_items' => __('Search', 'text_domain'),
-        'not_found' => __('No locatioan found', 'text_domain'),
-        'not_found_in_trash' => __('No locatioan found in Trash', 'text_domain'),
-        'parent_item_colon' => __('Parent locatioan:', 'text_domain'),
-        'menu_name' => __('Locatioans', 'text_domain'),
-    );
-
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'menu_position' => 5,
-        //'menu_icon'         => '',
-        'show_in_nav_menus' => true,
-        'publicly_queryable' => FALSE,
-        'exclude_from_search' => FALSE,
-        'has_archive' => FALSE,
-        'query_var' => FALSE,
-        'can_export' => true,
-        'rewrite' => true,
-        'capability_type' => 'post',
-        'supports' => array('title','editor', 'thumbnail'),
-    );
-
-    register_post_type('locatioan', $args);
-}
-
 //Displays the post image on listings and blog posts
 if (!function_exists('cpotheme_postpage_image')) {
 
@@ -80,14 +38,71 @@ if (!function_exists('cpotheme_postpage_image')) {
             } else {
                 the_post_thumbnail();
             }
-        }else{
+        } else {
             echo '<a href="' . get_permalink(get_the_ID()) . '" title="' . sprintf(esc_attr__('Go to %s', 'allegiant'), the_title_attribute('echo=0')) . '" rel="bookmark">';
-                the_post_thumbnail('portfolio');
-                echo "<img src='".  get_stylesheet_directory_uri()."/images/no-image.jpg'/>";
-                echo '</a>';
-            
+            the_post_thumbnail('portfolio');
+            echo "<img src='" . get_stylesheet_directory_uri() . "/images/no-image.jpg'/>";
+            echo '</a>';
         }
     }
 
 }
 ?>
+
+
+
+<!--Add New Menu Entry-->
+
+<?php
+// create custom plugin settings menu
+add_action('admin_menu', 'headerTopStoreInfoMenu');
+function headerTopStoreInfoMenu() {
+    //create new top-level menu
+    add_menu_page('Header Top Store Locations Info', 'Header Top Info', 'administrator', __FILE__, 'headerTopStoreInfoMenuPage','');
+
+    //call register settings function
+    add_action('admin_init', 'register_my_cool_plugin_settings');
+}
+
+function register_my_cool_plugin_settings() {
+    //register our settings
+    register_setting('top-header-locations-info-group', 'HTOP_Loc_Central_Phoenix');
+    register_setting('top-header-locations-info-group', 'HTOP_Loc_Fountain_Hills');
+    register_setting('top-header-locations-info-group', 'HTOP_Loc_North_Phoenix');
+    register_setting('top-header-locations-info-group', 'HTOP_Loc_Peoria');
+    register_setting('top-header-locations-info-group', 'HTOP_Loc_Scottsdale');
+}
+
+function headerTopStoreInfoMenuPage() {
+    ?>
+    <div class="wrap">
+        <h1>Header Top Location Info</h1>
+        <form method="post" action="options.php">
+    <?php settings_fields('top-header-locations-info-group'); ?>
+    <?php do_settings_sections('top-header-locations-info-group'); ?>
+            <table class="form-table">
+                <tr valign="top">
+                    <th scope="row">Central Phoenix</th>
+                    <td><input style="width: 100%;" required="" type="text" name="HTOP_Loc_Central_Phoenix" value="<?php echo esc_attr(get_option('HTOP_Loc_Central_Phoenix')); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Fountain Hills</th>
+                    <td><input style="width: 100%;" required=""  type="text" name="HTOP_Loc_Fountain_Hills" value="<?php echo esc_attr(get_option('HTOP_Loc_Fountain_Hills')); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">North Phoenix</th>
+                    <td><input style="width: 100%;" required=""  type="text" name="HTOP_Loc_North_Phoenix" value="<?php echo esc_attr(get_option('HTOP_Loc_North_Phoenix')); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Peoria</th>
+                    <td><input style="width: 100%;" required=""  type="text" name="HTOP_Loc_Peoria" value="<?php echo esc_attr(get_option('HTOP_Loc_Peoria')); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Scottsdale</th>
+                    <td><input style="width: 100%;" required=""  type="text" name="HTOP_Loc_Scottsdale" value="<?php echo esc_attr(get_option('HTOP_Loc_Scottsdale')); ?>" /></td>
+                </tr>
+            </table>
+    <?php submit_button(); ?>
+        </form>
+    </div>
+<?php } ?>
