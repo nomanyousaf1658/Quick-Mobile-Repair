@@ -47,18 +47,14 @@ if (!function_exists('cpotheme_postpage_image')) {
     }
 
 }
-?>
 
 
-
-<!--Add New Menu Entry-->
-
-<?php
+//////////////////////////////  Add New Menu Entry //////////////////////////////
 // create custom plugin settings menu
 add_action('admin_menu', 'headerTopStoreInfoMenu');
 function headerTopStoreInfoMenu() {
     //create new top-level menu
-    add_menu_page('Header Top Store Locations Info', 'Header Top Info', 'administrator', __FILE__, 'headerTopStoreInfoMenuPage','');
+    add_menu_page('Header Top Store Locations Info', 'Header Top Info', 'administrator', 'header_top_info', 'headerTopStoreInfoMenuPage','');
 
     //call register settings function
     add_action('admin_init', 'register_my_cool_plugin_settings');
