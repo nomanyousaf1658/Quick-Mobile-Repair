@@ -71,11 +71,15 @@
         font-size: 14px;
     }
     body.single.single-post #main, 
-    body.blog #main {
+    body.blog #main,
+    body.archive.category #main{
         padding: 30px 0 !important;
     }
     body .addressBox.form #s {
         margin: 0;
+    }
+    .addressBox.form {
+        display: none;
     }
 }
 
@@ -171,8 +175,37 @@
         text-align: center;
     }
     body.single.single-post #main, 
+    body.archive.category #main, 
     body.blog #main {
         padding: 0 !important;
+    }
+    .single.single-post .pagetitle-title {
+        font-size: 18px;
+    }
+    #breadcrumb {
+        font-size: 13px;
+    }
+    .single.single-post h1, 
+    .single.single-post h2 {
+        font-size: 20px;
+    }
+    .page-id-2257 .site-main-heading, 
+    .page-id-2251 .site-main-heading, 
+    .page-id-2244 .site-main-heading,
+    .page-id-2186 .site-main-heading,
+    .page-id-2237 .site-main-heading
+    {
+        text-align: center !important;
+    }
+
+    .page-id-2257 .site-main-heading h1,
+    .page-id-2251 .site-main-heading h1, 
+    .page-id-2244 .site-main-heading h1,
+    .page-id-2186 .site-main-heading h1,
+    .page-id-2237 .site-main-heading h1
+    {
+        font-size: 23px !important;
+        padding: 0px !important;
     }
 }
 
@@ -195,21 +228,28 @@
         margin: 6px 0 !important;
         display: inline-block;
     }
-    body.blog article {
+    body.blog article,
+    body.archive.category article {
         display: block;
     }
-    body.blog .post-image.blog-post-image {
+    body.blog .post-image.blog-post-image,
+    body.archive.category .post-image.blog-post-image {
         width: 100%;
         float: left;
         overflow: hidden;
     }
-    body.blog .post-body.blog-post-content {
+    body.blog .post-body.blog-post-content,
+    body.archive.category .post-body.blog-post-content {
         float: left;
         width: 87%;
         border: none;
     }
-    body.blog .post-image.blog-post-image img {
+    body.blog .post-image.blog-post-image img,
+    body.archive.category .post-image.blog-post-image img {
         width: 87%;
     }
-
+    .about-us-location-listing {
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
