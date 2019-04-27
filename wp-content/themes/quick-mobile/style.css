@@ -447,3 +447,17 @@ body .location-info-icon {
     position: relative;
     z-index: 9;
 }
+.mobile-cta {
+    margin-bottom: -20px;
+}
+
+/*Sticky Header*/
+.sticky-menus header#header {
+    position: fixed;
+    z-index: 9;
+    top:0;
+}
+body.sticky-menus .elementor-widget-wp-widget-rev-slider-widget,
+body.sticky-menus #pagetitle {
+    margin-top: 75px;
+}

@@ -12,7 +12,7 @@ function ajaxurl() {
 function enque_styleAndScripts() {
     wp_enqueue_style('FontAwesome', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
     wp_enqueue_style('ChildThemeResponsive', get_stylesheet_directory_uri() . '/css/responsive-style.css');
-//    wp_enqueue_script('customChildScripts', get_stylesheet_directory_uri() . '/js/customChildScripts.js', array('jquery'));
+    wp_enqueue_script('CustomScriptsJS', get_stylesheet_directory_uri() . '/js/custom-scripts.js', array('jquery'));
 }
 
 add_action('wp_enqueue_scripts', 'enque_styleAndScripts', 10);
@@ -52,9 +52,10 @@ if (!function_exists('cpotheme_postpage_image')) {
 //////////////////////////////  Add New Menu Entry //////////////////////////////
 // create custom plugin settings menu
 add_action('admin_menu', 'headerTopStoreInfoMenu');
+
 function headerTopStoreInfoMenu() {
     //create new top-level menu
-    add_menu_page('Header Top Store Locations Info', 'Header Top Info', 'administrator', 'header_top_info', 'headerTopStoreInfoMenuPage','');
+    add_menu_page('Header Top Store Locations Info', 'Header Top Info', 'administrator', 'header_top_info', 'headerTopStoreInfoMenuPage', '');
 
     //call register settings function
     add_action('admin_init', 'register_my_cool_plugin_settings');
@@ -74,7 +75,7 @@ function headerTopStoreInfoMenuPage() {
     <div class="wrap">
         <h1>Header Top Location Info</h1>
         <form method="post" action="options.php">
-    <?php settings_fields('top-header-locations-info-group'); ?>
+            <?php settings_fields('top-header-locations-info-group'); ?>
     <?php do_settings_sections('top-header-locations-info-group'); ?>
             <table class="form-table">
                 <tr valign="top">
